@@ -1,0 +1,23 @@
+# On GitHub.com:
+# 1. Create new repository
+# 2. Don't initialize with README
+# 3. Note the repository URL
+
+# On your local machine:
+mkdir my-rent-system
+cd my-rent-system
+
+# Create the files
+touch index.html
+mkdir -p .github/workflows
+touch .github/workflows/deploy.yml
+
+# Copy the content provided above into each file
+
+# Initialize and push
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin YOUR_REPOSITORY_URL
+git push -u origin main
