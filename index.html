@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Test Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kira Takip Sistemi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
 </head>
-<body>
-    <h1>Test Page</h1>
-    <p>If you can see this, the deployment worked!</p>
+<body class="bg-gray-50">
+    <div class="min-h-screen flex">
+        <!-- Dynamic Sidebar -->
+        <div id="sidebar"></div>
+        
+        <!-- Main Content -->
+        <div id="mainContent" class="flex-1">
+            <!-- Dynamic Header -->
+            <div id="header"></div>
+            
+            <!-- Dynamic Content -->
+            <div id="content" class="p-8"></div>
+        </div>
+    </div>
+
+    <!-- Modal Container -->
+    <div id="modalContainer"></div>
+
+    <!-- Core Scripts -->
+    <script src="assets/js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize the application
+            App.init();
+        });
+    </script>
 </body>
 </html>
